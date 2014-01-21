@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 856.0, 73.0, 686.0, 260.0 ],
+		"rect" : [ 802.0, 44.0, 686.0, 260.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 815.0, 405.0, 865.0, 302.0 ],
+						"rect" : [ 776.0, 410.0, 865.0, 302.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -661,7 +661,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 978.0, 276.0, 627.0, 594.0 ],
+						"rect" : [ 803.0, 375.0, 627.0, 594.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -680,6 +680,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -736,7 +737,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 138.0, 300.0, 216.0, 31.0 ],
-									"text" : "AbletonLive:/track.1/Chorus/Feedback"
+									"text" : "AbletonLive:/0"
 								}
 
 							}
@@ -866,7 +867,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 25.0, 252.0, 562.0 ],
 									"rowheight" : 20,
-									"rows" : 28,
+									"rows" : 29,
 									"sccolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"selmode" : 3,
 									"sgcolor" : [ 0.619608, 0.0, 0.360784, 0.701961 ],
@@ -987,7 +988,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 295.5, 187.0, 131.0, 26.0 ],
+					"patching_rect" : [ 267.0, 198.0, 131.0, 26.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -1058,7 +1059,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 138.5, 227.0, 33.0 ],
+					"patching_rect" : [ 459.0, 132.0, 227.0, 33.0 ],
 					"text" : "Once the AbletonLive project is opened, discover its namespace "
 				}
 
@@ -1069,12 +1070,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 22.16683,
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.0, 138.5, 177.0, 29.0 ],
-					"text" : "namespace/build"
+					"patching_rect" : [ 267.0, 132.0, 183.0, 54.0 ],
+					"text" : "directory/clear, namespace/build"
 				}
 
 			}
@@ -1089,7 +1091,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 147.5, 157.0, 31.0 ],
+					"patching_rect" : [ 21.0, 143.5, 157.0, 31.0 ],
 					"text" : "protocol/setup ip 127.0.0.1, protocol/setup port 9001"
 				}
 
