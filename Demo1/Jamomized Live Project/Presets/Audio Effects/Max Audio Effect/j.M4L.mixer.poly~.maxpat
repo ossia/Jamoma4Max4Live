@@ -498,12 +498,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 176.0, 18.0, 112.0, 20.0 ],
-					"text" : "j.model component"
+					"patching_rect" : [ 176.0, 18.0, 112.0, 33.0 ],
+					"text" : "j.model @amenities none"
 				}
 
 			}
@@ -517,10 +518,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 318.0, 18.0, 30.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 

@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 856.0, 73.0, 632.0, 260.0 ],
+		"rect" : [ 856.0, 73.0, 632.0, 266.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,32 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 267.0, 215.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 323.0, 215.0, 102.0, 18.0 ],
+					"text" : "namespace/clear"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -616,7 +642,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 929.0, 320.0, 627.0, 594.0 ],
+						"rect" : [ 999.0, 374.0, 498.0, 594.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -694,7 +720,7 @@
 									"patching_rect" : [ 138.0, 300.0, 224.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 267.0, 111.0, 224.0, 18.0 ],
-									"text" : "AbletonLive:/0"
+									"text" : "AbletonLive:/008tempName"
 								}
 
 							}
@@ -779,7 +805,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 233.0, 79.0, 91.0, 20.0 ],
+									"patching_rect" : [ 336.0, 116.0, 91.0, 20.0 ],
 									"text" : "loadmess clear"
 								}
 
@@ -824,7 +850,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 25.0, 228.0, 554.0 ],
 									"rowheight" : 20,
-									"rows" : 27,
+									"rows" : 22,
 									"sccolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"selmode" : 3,
 									"sgcolor" : [ 0.619608, 0.0, 0.360784, 0.701961 ],
@@ -924,7 +950,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 242.5, 154.5, 30.5, 154.5 ],
+									"midpoints" : [ 345.5, 154.5, 30.5, 154.5 ],
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -1069,7 +1095,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 147.0, 157.0, 31.0 ],
+					"patching_rect" : [ 21.0, 149.5, 157.0, 31.0 ],
 					"text" : "protocol/setup ip 127.0.0.1, protocol/setup port 9001"
 				}
 
@@ -1270,8 +1296,40 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 267.0, 238.0, 134.0, 18.0 ],
+					"text" : "namespace/observe $1"
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
