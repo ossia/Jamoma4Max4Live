@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 836.0, 223.0, 651.0, 619.0 ],
+		"rect" : [ 578.0, 185.0, 651.0, 619.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,13 +88,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 399.0, 357.0, 130.0, 74.0 ],
-					"text" : "j.parameter pan @type decimal @repetitions/filter 1 @range/bounds 0. 1. @range/clipmode both"
+					"patching_rect" : [ 399.0, 357.0, 182.0, 60.0 ],
+					"text" : "j.parameter pan @type decimal @repetitions/filter 1 @range/bounds -1. 1. @range/clipmode both"
 				}
 
 			}
@@ -518,6 +518,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 318.0, 18.0, 30.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -895,15 +899,6 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
