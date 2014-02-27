@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<jamoma version="0.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jamoma.org/ file:jamoma.xsd">
+ <cue name="scene1">
+  <flag name="description">none</flag>
+  <!---->
+  <!---->
+  <script address="AbletonLive:">
+   <script address="masterTrack">
+    <command address="volume">0.850000</command>
+   </script>
+   <!---->
+   <script address="track.2">
+    <command address="volume">0.740000</command>
+    <command address="pan">0.464000</command>
+    <script address="GrainDelay">
+     <command address="Pitch">-5.333300</command>
+     <command address="Spray">0.000000</command>
+     <command address="Random">0.000000</command>
+     <command address="Feedback">0.000000</command>
+    </script>
+   </script>
+   <!---->
+   <script address="track.1">
+    <command address="pan">0.000000</command>
+    <command address="volume">0.674900</command>
+    <script address="Chorus">
+     <command address="LFORate">0.037400</command>
+    </script>
+   </script>
+  </script>
+ </cue>
+ <cue name="scene2">
+  <flag name="description">none</flag>
+  <!---->
+  <!---->
+  <script address="AbletonLive:">
+   <script address="masterTrack">
+    <command address="volume">0.850000</command>
+   </script>
+   <!---->
+   <script address="track.2">
+    <command address="volume">0.640000</command>
+    <command address="pan">-0.712000</command>
+    <script address="GrainDelay">
+     <command address="Pitch">6.000000</command>
+     <command address="Spray">0.000000</command>
+     <command address="Random">1.000000</command>
+     <command address="Feedback">0.556600</command>
+    </script>
+   </script>
+   <!---->
+   <script address="track.1">
+    <command address="pan">0.568000</command>
+    <command address="volume">0.820000</command>
+    <script address="Chorus">
+     <command address="LFORate">0.890600</command>
+    </script>
+   </script>
+  </script>
+ </cue>
+ <cue name="intro">
+  <flag name="description">none</flag>
+  <!---->
+  <!---->
+  <script address="AbletonLive:">
+   <script address="masterTrack">
+    <command address="volume">0.850000</command>
+   </script>
+   <!---->
+   <script address="track.2">
+    <command address="volume">0.000000</command>
+    <command address="pan">1.000000</command>
+    <script address="GrainDelay">
+     <command address="Pitch">-5.333300</command>
+     <command address="Spray">0.000000</command>
+     <command address="Random">0.000000</command>
+     <command address="Feedback">0.000000</command>
+    </script>
+   </script>
+   <!---->
+   <script address="track.1">
+    <command address="pan">-1.000000</command>
+    <command address="volume">0.674900</command>
+    <script address="Chorus">
+     <command address="LFORate">0.037400</command>
+    </script>
+   </script>
+  </script>
+ </cue>
+ <cue name="scene3">
+  <flag name="description">none</flag>
+  <!---->
+  <!---->
+  <script address="AbletonLive:">
+   <script address="masterTrack">
+    <command address="volume">0.850000</command>
+   </script>
+   <!---->
+   <script address="track.2">
+    <command address="volume" ramp="3000">0.774900</command>
+    <command address="pan" ramp="3000">0.240000</command>
+    <script address="GrainDelay">
+     <command address="Pitch" ramp="3000">-9.904799</command>
+     <command address="Spray" ramp="3000">1.000000</command>
+     <command address="Random" ramp="3000">1.000000</command>
+     <command address="Feedback" ramp="3000">0.000000</command>
+    </script>
+   </script>
+   <!---->
+   <script address="track.1">
+    <command address="pan" ramp="3000">0.336000</command>
+    <command address="volume" ramp="3000">0.000000</command>
+    <script address="Chorus">
+     <command address="LFORate" ramp="3000">0.890600</command>
+    </script>
+   </script>
+  </script>
+ </cue>
+ <cue name="scene4">
+  <flag name="description">none</flag>
+  <!---->
+  <!---->
+  <script address="AbletonLive:">
+   <!---->
+   <script address="track.1">
+    <script address="Chorus">
+     <command address="LFORate" ramp="5000">0.890600</command>
+    </script>
+    <command address="pan" ramp="5000">0.336000</command>
+    <command address="volume" ramp="5000">0.000000</command>
+   </script>
+   <!---->
+   <script address="track.2">
+    <script address="GrainDelay">
+     <command address="Pitch" ramp="5000">9.750000</command>
+     <command address="Feedback" ramp="5000">0.527000</command>
+     <command address="Random" ramp="5000">0.000000</command>
+     <command address="Spray" ramp="5000">1.000000</command>
+    </script>
+    <command address="pan" ramp="5000">-1.000000</command>
+    <command address="volume" ramp="5000">0.774900</command>
+   </script>
+  </script>
+ </cue>
+</jamoma>

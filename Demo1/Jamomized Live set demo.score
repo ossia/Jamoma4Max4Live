@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<jamoma version="0.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jamoma.org/ file:jamoma.xsd">
+ <!--protocols setup-->
+ <protocol name="OSC">
+  <i-score port="9002" ip="localhost"/>
+ </protocol>
+ <protocol name="Minuit">
+  <MinuitDevice1 ip="127.0.0.1" port="9998"/>
+  <i-score port="8002" ip="127.0.0.1"/>
+ </protocol>
+ <!--applications namespace-->
+ <application author="" type="mirror" version="" name="MinuitDevice1">
+  <tracksCount object="Data"/>
+  <track.2 object="Container">
+   <GrainDelay object="none">
+    <Pitch object="Data"/>
+    <Random object="Data"/>
+    <Feedback object="Data"/>
+    <Spray object="Data"/>
+   </GrainDelay>
+   <pan object="Data"/>
+   <model object="ModelInfo"/>
+   <volume object="Data"/>
+  </track.2>
+  <track.1 object="Container">
+   <Chorus object="none">
+    <LFORate object="Data"/>
+   </Chorus>
+   <pan object="Data"/>
+   <model object="ModelInfo"/>
+   <volume object="Data"/>
+  </track.1>
+ </application>
+ <application author="" type="local" version="" name="i-score">
+  <Transport object="none">
+   <!--"change i-score speed rate execution"-->
+   <Speed object="Data" service="message" rampDrive="Max" dataspace="none" rangeBounds="0.000000 10.000000" priority="0" tag="none" type="decimal" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1" valueStepsize="0.100000"/>
+   <!--"set the time where to start i-score execution (in ms)"-->
+   <StartPoint object="Data" service="message" rampDrive="Max" dataspace="none" rangeBounds="0 1" priority="0" tag="none" type="integer" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1" valueStepsize="1"/>
+   <!--"pause i-score execution"-->
+   <Pause object="Data" service="message" rampDrive="none" dataspace="none" priority="0" tag="none" type="none" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1"/>
+   <!--"return to the beginning of the scenario"-->
+   <Rewind object="Data" service="message" rampDrive="none" dataspace="none" priority="0" tag="none" type="none" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1"/>
+   <!--"stop i-score execution"-->
+   <Stop object="Data" service="message" rampDrive="none" dataspace="none" priority="0" tag="none" type="none" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1"/>
+   <!--"start i-score execution"-->
+   <Play object="Data" service="message" rampDrive="none" dataspace="none" priority="0" tag="none" type="none" dataspaceUnit="none" rangeClipmode="none" rampFunction="none" repetitionsFilter="0" active="1"/>
+  </Transport>
+ </application>
+ <Scenario name="root" color="255 255 255" viewZoom="1.000000 1.000000" viewPosition="0 0">
+  <startEvent name="start" date="0u"/>
+  <endEvent name="end" date="36000000u"/>
+  <event name="j2515037225" date="464u">
+   <command address="MinuitDevice1:/track.2/GrainDelay/Random">0.000000</command>
+   <command address="MinuitDevice1:/track.1/volume">0.651700</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Spray">0.000000</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Pitch">0.000000</command>
+   <command address="MinuitDevice1:/track.2/volume">0.573000</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Feedback">0.000000</command>
+   <command address="MinuitDevice1:/track.2/pan">-0.432000</command>
+   <command address="MinuitDevice1:/track.1/pan">0.096000</command>
+   <command address="MinuitDevice1:/track.1/Chorus/LFORate">0.278274</command>
+  </event>
+  <event name="j53228024" date="5248u">
+   <command address="MinuitDevice1:/track.2/GrainDelay/Random">0.000000</command>
+   <command address="MinuitDevice1:/track.1/volume">0.017600</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Spray">0.000000</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Pitch">0.000000</command>
+   <command address="MinuitDevice1:/track.2/volume">0.892500</command>
+   <command address="MinuitDevice1:/track.2/GrainDelay/Feedback">0.000000</command>
+   <command address="MinuitDevice1:/track.2/pan">1.000000</command>
+   <command address="MinuitDevice1:/track.1/pan">-1.000000</command>
+   <command address="MinuitDevice1:/track.1/Chorus/LFORate">0.278274</command>
+  </event>
+  <Automation name="Box.2" start="j2515037225" end="j53228024" color="255 255 255" verticalPosition="63u" verticalSize="197u">
+   <indexedCurves address="MinuitDevice1:/track.2/volume">
+    <curve active="1" redundancy="0" sampleRate="40u" function="0.000000 0.573000 1.000000 1.000000 0.892500 1.000000"/>
+   </indexedCurves>
+   <indexedCurves address="MinuitDevice1:/track.2/pan">
+    <curve active="1" redundancy="0" sampleRate="40u" function="0.000000 -0.432000 1.000000 1.000000 1.000000 1.000000"/>
+   </indexedCurves>
+   <indexedCurves address="MinuitDevice1:/track.1/volume">
+    <curve active="1" redundancy="0" sampleRate="40u" function="0.000000 0.651700 1.000000 1.000000 0.017600 1.000000"/>
+   </indexedCurves>
+   <indexedCurves address="MinuitDevice1:/track.1/pan">
+    <curve active="1" redundancy="0" sampleRate="40u" function="0.000000 0.096000 1.000000 1.000000 -1.000000 1.000000"/>
+   </indexedCurves>
+  </Automation>
+ </Scenario>
+</jamoma>
