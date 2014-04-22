@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
-			"architecture" : "x86"
+			"revision" : 7,
+			"architecture" : "x64"
 		}
 ,
 		"rect" : [ 856.0, 73.0, 632.0, 266.0 ],
@@ -66,8 +66,8 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
-							"architecture" : "x86"
+							"revision" : 7,
+							"architecture" : "x64"
 						}
 ,
 						"rect" : [ 879.0, 437.0, 801.0, 284.0 ],
@@ -504,11 +504,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
-							"architecture" : "x86"
+							"revision" : 7,
+							"architecture" : "x64"
 						}
 ,
-						"rect" : [ 999.0, 374.0, 498.0, 594.0 ],
+						"rect" : [ 915.0, 418.0, 498.0, 582.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -586,7 +586,7 @@
 									"patching_rect" : [ 138.0, 300.0, 224.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 267.0, 111.0, 224.0, 18.0 ],
-									"text" : "AbletonLive:/0"
+									"text" : "AbletonLive:/track.1/Chorus/DryWet"
 								}
 
 							}
@@ -716,7 +716,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 25.0, 228.0, 554.0 ],
 									"rowheight" : 20,
-									"rows" : 17,
+									"rows" : 9,
 									"sccolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"selmode" : 3,
 									"sgcolor" : [ 0.619608, 0.0, 0.360784, 0.701961 ],
@@ -945,8 +945,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 267.0, 149.5, 328.0, 29.0 ],
-					"text" : "directory/clear, namespace/build"
+					"patching_rect" : [ 267.0, 149.5, 178.0, 29.0 ],
+					"text" : "namespace/build"
 				}
 
 			}
