@@ -1360,7 +1360,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 399.0, 357.0, 128.0, 87.0 ],
-					"text" : "j.parameter pan.1 @type decimal @repetitions/filter 1 @range/bounds -1. 1. @range/clipmode both"
+					"text" : "j.parameter pan.1 @type decimal @repetitions/filter 1 @range -1. 1. @clipmode both"
 				}
 
 			}
@@ -1579,7 +1579,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 134.0, 352.5, 141.0, 74.0 ],
-					"text" : "j.parameter volume.1 @type decimal @repetitions/filter 1 @range/bounds 0. 1. @range/clipmode both"
+					"text" : "j.parameter volume.1 @type decimal @repetitions/filter 1 @range 0. 1. @clipmode both"
 				}
 
 			}
