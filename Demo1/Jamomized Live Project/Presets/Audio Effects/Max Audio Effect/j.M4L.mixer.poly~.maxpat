@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 566.0, 128.0, 651.0, 726.0 ],
+		"rect" : [ 257.0, 167.0, 651.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -111,7 +111,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -546,7 +546,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -981,7 +981,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1434,6 +1434,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
@@ -1442,9 +1443,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 399.0, 375.0, 106.0, 76.0 ],
+					"patching_rect" : [ 399.0, 370.5, 129.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter pan.1 @type decimal @repetitions/filter 1 @range -1. 1. @clipmode both"
+					"text" : "j.parameter ---pan.1 @type decimal @repetitions/filter 1 @range -1. 1. @clipmode both"
 				}
 
 			}
@@ -1671,6 +1672,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-16",
@@ -1681,7 +1683,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 134.0, 370.5, 141.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter volume.1 @type decimal @repetitions/filter 1 @range 0. 1. @clipmode both"
+					"text" : "j.parameter ---volume.1 @type decimal @repetitions/filter 1 @range 0. 1. @clipmode both"
 				}
 
 			}
@@ -1839,10 +1841,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 318.0, 36.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -2279,7 +2277,13 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"embedsnapshot" : 0
 	}
 
 }

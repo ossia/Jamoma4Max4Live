@@ -1,0 +1,74 @@
+- cue "cueA"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/AbletonLive:/track.1/Chorus/LFORate 0.278274
+/AbletonLive:/track.1/pan 0.096000
+/AbletonLive:/track.1/volume 0.195000
+/AbletonLive:/track.2/pan 0.496000
+/AbletonLive:/track.2/volume 0.584900
+# 
+# ###########################################
+
+- cue "cueB"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/AbletonLive:/track.1/Chorus/LFORate 0.278274
+/AbletonLive:/track.1/pan 0.504000
+/AbletonLive:/track.1/volume 0.850000
+/AbletonLive:/track.2/pan -0.144000
+/AbletonLive:/track.2/volume 0.062100
+# 
+# ###########################################
+
+- cue "intro"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/AbletonLive:/track.1/Chorus/LFORate 0.278274
+/AbletonLive:/track.1/pan -0.208000
+/AbletonLive:/track.1/volume 0.750000
+/AbletonLive:/track.2/GrainDelay/Feedback 0.282700
+/AbletonLive:/track.2/GrainDelay/Pitch 0.000000
+/AbletonLive:/track.2/GrainDelay/Random 0.712100
+/AbletonLive:/track.2/pan 0.320000
+/AbletonLive:/track.2/volume 0.684900
+# 
+# ###########################################
+
+- cue "scene1"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/AbletonLive:/track.1/Chorus/LFORate 0.121500
+/AbletonLive:/track.1/pan 0.552000
+/AbletonLive:/track.1/volume 0.328800
+/AbletonLive:/track.2/GrainDelay/Feedback 0.678600
+/AbletonLive:/track.2/GrainDelay/Pitch 0.000000
+/AbletonLive:/track.2/GrainDelay/Random 0.159100
+/AbletonLive:/track.2/pan 0.432000
+/AbletonLive:/track.2/volume 0.784900
+# 
+# ###########################################
+
+- cue "scene2"
+- description "something about this cue"
+# ###########################################
+# 
+# 
+/AbletonLive:/track.1/Chorus/LFORate 0.990700
+/AbletonLive:/track.1/pan 0.552000
+/AbletonLive:/track.1/volume 0.784900
+/AbletonLive:/track.2/GrainDelay/Feedback 0.712500
+/AbletonLive:/track.2/GrainDelay/Pitch 0.000000
+/AbletonLive:/track.2/GrainDelay/Random 0.856100
+/AbletonLive:/track.2/pan 0.432000
+/AbletonLive:/track.2/volume 0.784900
+# 
+# ###########################################
+
